@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.logo{
+    height: 5rem;
+    width: auto;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    font-weight: 600;
+}
+
+.banner-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.banner{
+    max-width: 100vw;
+}
+
+.banner-logo{
+    height: 20rem;
+    margin-top: -15vh;
+}
+
+.subtitle-logo{
+    margin-top: -5vh;
+    margin-bottom: 5rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+    margin: 0 8rem 8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+
+
+.grid-background{
+    z-index: -2;
+    width: 20%;
+}
+
+.grid-logo, .logo-hipotetica{
+    height: 5.5rem;
+    font-size: 20px;
+    margin-bottom: 10rem;
+}
+
+.button{
+    margin-top: 2rem;
+}
