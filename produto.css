@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0;
@@ -40,4 +41,131 @@ nav ul li a{
 
 nav ul li a:hover{
     font-weight: 600;
+}
+
+/**********************************/
+
+.conteudo-bg{
+    position: absolute;
+    filter: brightness(70%);
+    height: 1000px;
+}
+
+.conteudo{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-bottom: 6rem;
+}
+
+.produto-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.steam{
+    height: 20rem;
+    margin: 5rem 0;
+}
+
+.availability{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.steam-button{
+    border: 2px #444 solid;
+    border-radius: 15px;
+    padding: .5rem;
+    background-color: white;
+}
+
+.steam-button img{width: 300px;}
+
+.produto-description, .texto-preco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.steam-description{
+    color: white;
+    background-color: #33333380;
+    padding: 3rem;
+    font-size: 24px;
+    width: 600px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.preco{
+    font-family: 'Roboto';
+    color: rgb(0, 255, 0);
+    background-color: #303030;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 00;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: -1.5rem;
+}
+
+.button{
+    color: #444;
+    text-decoration: none;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    font-size: 36px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.button:hover{cursor: pointer;}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.socials{
+    display: flex;
+}
+
+.socials a{
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.socials a img{
+    height: auto;
+    width: 2rem;
+}
+
+.socials a:hover{
+    filter: brightness(50%);
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 1rem;
 }
