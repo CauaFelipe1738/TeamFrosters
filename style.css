@@ -173,6 +173,22 @@ footer{
         width: auto;
     }
 
+
+    nav ul{
+        flex-direction: column;
+        gap: .5rem;
+    }
+    /*TENTATIVA LASTIMÁVEL DE MENU HAMBÚRGUER
+    nav ul{
+        margin-left: -10rem;
+        flex-direction: column;
+        gap: .5rem;
+        position: absolute;
+        background-color: rgb(146, 146, 146);
+        padding: 1rem;
+        top: -.5%;
+    }*/
+
     .banner-div{
         margin-bottom: 0;
     }
@@ -197,17 +213,5 @@ footer{
 
     .grid:nth-child(3){
         margin-bottom: 2rem;
-    }
-}
-
-@media(width>600px){
-
-    header{flex-direction: row;}
-
-    .menu-opener{display: none;}
-
-    header nav{
-        display: flex;
-        flex-direction: row;
     }
 }

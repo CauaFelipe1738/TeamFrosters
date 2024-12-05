@@ -9,6 +9,10 @@
     overflow-x: hidden;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -48,7 +52,10 @@ nav ul li a:hover{
 .conteudo-bg{
     position: absolute;
     filter: brightness(70%);
-    height: 1000px;
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    
 }
 
 .conteudo{
@@ -168,4 +175,51 @@ footer{
     text-align: center;
     line-height: 25px;
     margin-bottom: 1rem;
+}
+
+@media(width < 600px){
+
+    
+    nav ul{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .conteudo-bg{
+        overflow-x: hidden;
+        width: 100vw;
+        height: 120vh;
+        object-fit: cover;
+    }
+
+    .conteudo{
+        flex-direction: column;
+    }
+
+    .steam{margin: 25px;}
+
+    .availability{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .steam-button img{
+        width: 100px;
+    }
+
+    .steam-button{margin-bottom: 2%;}
+
+    .produto-description{margin-top: 20px;}
+
+    .steam-description{
+        font-size: 18px;
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .preco{
+        font-size: 30px;
+        margin-top: -0.75rem;
+        margin-bottom: 60px;
+    }
 }
