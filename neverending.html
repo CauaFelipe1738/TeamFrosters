@@ -11,10 +11,20 @@
         <img src="./img/team frost logo.png" alt="Logo" class="logo">
         <nav>
             <ul>
+                <li class="hideMobile"><a href="./index.html">Home</a></li>
+                <li class="hideMobile"><a href="https://www.webtoons.com/en/canvas/beast-hazard/list?title_no=830271">Beast: Hazard</a></li>
+                <li class="hideMobile"><a href="#">About us</a></li>
+                <li class="hideMobile"><a href="#">FAQ</a></li>
+                <li class="hideDesktop" onclick="showSidebar()"><a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+    
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a class="hideDesktop"></a></li>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="https://www.webtoons.com/en/canvas/beast-hazard/list?title_no=830271">Beast: Hazard</a></li>
-                <li><a href="">FAQ</a></li>
+                <li ><a href="https://www.webtoons.com/en/canvas/beast-hazard/list?title_no=830271">Beast: Hazard</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FAQ</a></li>
             </ul>
         </nav>
     </header>
@@ -54,4 +64,5 @@
     <p class="copyright">Copyright © TeamFrost<br>Developed by: Cauã Felipe & Otávio Seiji</p>
     <img src="./img/team frost logo.png" alt="logo" class="logo">
 </footer>
+<script src="./script.js"></script>
 </html>

@@ -1,5 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
+nav{
+    z-index: 99;
+    display: flex;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 60px;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav a{
+    height:100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #222;
+}
+
+nav a:hover{
+    fill: #000;
+}
+
+.icon{
+    fill: #222;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 800px){
+    .hideMobile{
+        display: none;
+    }
+}
+
+@media (min-width: 800px){
+    .hideDesktop{
+        display: none;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -87,6 +157,11 @@ nav ul li a:hover{
 
 }
 
+.item:hover .grid-background{
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+
 .grid-background{
     height: 360px;
     width: 280px;
@@ -95,15 +170,6 @@ nav ul li a:hover{
     border-radius: 25px;
     object-fit: cover;
     filter: brightness(75%);
-}
-
-.item a{
-    display: flex;
-    position: relative;
-    text-decoration: none;
-    color: white;
-    font-weight: 900;
-    font-size: 22px;
 }
 
 .overlay{
@@ -178,16 +244,6 @@ footer{
         flex-direction: column;
         gap: .5rem;
     }
-    /*TENTATIVA LASTIMÁVEL DE MENU HAMBÚRGUER
-    nav ul{
-        margin-left: -10rem;
-        flex-direction: column;
-        gap: .5rem;
-        position: absolute;
-        background-color: rgb(146, 146, 146);
-        padding: 1rem;
-        top: -.5%;
-    }*/
 
     .banner-div{
         margin-bottom: 0;
