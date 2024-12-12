@@ -154,7 +154,7 @@ nav ul li a:hover{
     width: 300px;
     padding: 2rem;
     border-radius: 25px;
-
+    overflow: hidden;
 }
 
 .item:hover .grid-background{
@@ -239,6 +239,9 @@ footer{
         width: auto;
     }
 
+    .hideDesktop{
+        margin-right: -1rem;
+    }
 
     nav ul{
         flex-direction: column;
@@ -269,5 +272,17 @@ footer{
 
     .grid:nth-child(3){
         margin-bottom: 2rem;
+    }
+
+    .item, .grid-background, .grid-logo, .logo-hipotetica{
+        width: 14rem;
+        height: 18rem;
+        margin-bottom: 4rem;
+        overflow: hidden;
+    }
+
+    .grid-logo{
+        width: 10rem;
+        height: auto;
     }
 }
